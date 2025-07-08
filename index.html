@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A simple landing page to practice HTML, CSS and JavaScript. Built by Camilla C.">
+  <title>Cringe Pizza Affirmation Generator™</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family:"Poppins", sans-serif;
+      background:  #FFF5E1;
+      color: #1B1B2F;
+      line-height: 1.6;
+    }
+
+    .page{
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    h1{
+      font-family: "Luckiest Guy", cursive;
+      font-size:50px;
+      text-align: center;
+      color: #E76F51;
+    }
+
+    h3{
+      font-size: 28.8px;
+      text-align:center;
+      margin-bottom: 30px;
+    }
+
+    p{
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    strong{
+      font-weight: 700;
+    }
+
+    em{
+      font-size: italic;
+      color: #FF4F5A;
+    }
+
+    a{
+      font-size: 16px;
+      color: #8377B7;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 05px 0;
+    
+    }
+
+    hr{
+      width: 60%;
+      height: 1px;
+      border: none;
+      border-top: 1px solid #E0B7A2;
+      margin: 30px auto;
+    }
+
+    .hero-img{
+      width: 350px;
+      max-width: 80%;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-img:hover{
+      transform: scale(1.05);
+    }
+    
+    button.clickhere{
+      display: block;
+      margin: 30px auto;
+      padding: 18px 30px;
+      font-size:20px;
+      font-weight: bold;
+      background-color: #E76F51;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+     button.clickhere:hover{
+        background-color:#FF4F5A;
+        transform: scale(1.05);
+      }
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/908/original/passion-project.png?1751899407"
+        alt="Pizza Lover Badge" class="hero-img">
+    
+      <h1>What do you need today?</h1>
+      <h3>Pizza? A Cringe Quote? Or a Daily Affirmation?</h3>
+      <p>
+        Some days, you're thriving. Other days, you're one minor inconvenience away from deleting everything and moving to a cabin in the woods. 
+        <br/>
+        <br />
+        On those days, what do you need? A motivational quote stolen from a 2007 Tumblr post? A slice of pizza so greasy it could fix your life? Or maybe just a soft reminder that you're doing your best and that's enough?
+        <br />
+        <br />
+        <em>This page doesn't promise to solve your problems.</em> But it will offer you something completely unnecessary
+        but
+        mildly satisfying — whether that's emotional carbs, dramatic wisdom, or a crumb of calm.
+        <br />
+        <br />
+        <strong>Click the button.</strong> Let the digital chaos choose for you.
+        <br />
+        <br />
+        <strong>Therapy not included.</strong>
+      </p>
+      <hr>
+      <br />
+      <a
+        href="https://www.hochschule-rhein-waal.de/en/university/services-students/psychological-counselling-service/crisisemergencies" target="_blank"> If
+        you are strugling, please click here.</a>
+      <br />
+
+      <button class="clickhere">Let's Get Weird</button>
+    </main>
+  </div>
+</body>
+<script>
+  document.querySelector(".clickhere").addEventListener("click", function() {
+    let input = prompt ("What do you need today? (pizza, cringe or affirmation)").toLowerCase().trim();
+
+    if (input === "pizza") {
+      alert("You deserve a greasy slice of happiness. Extra cheese, no regrets! 🍕");
+    } else if (input === "cringe"){
+      alert("“Live. Laugh. Love.” — someone’s wall decor from 2007 💅");
+    } else if (input === "affirmation") {
+      alert ("You are doing your best, and that's more than enough! ❤️ ");
+    } else {
+      alert ("Hum...that's not on the menu. But we still respect your chaos. 🌀")
+    }
+  });
+
+</script>
+</html>
